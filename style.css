@@ -238,6 +238,96 @@ body {
 /* -------------------- */
 
 /* Sobre o curso */
+.body_hab {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Montserrat';
+    background-color: rgb(244, 255, 123);
+    padding-top: 6vh;
+    color: #000000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh;
+    grid-template-areas: "texto hab1"
+                         "texto hab2"
+                         "texto hab3"
+                         "texto hab4"
+                         "texto hab5"
+                         "texto hab6";
+}
+
+.texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.hab1 {
+    grid-area: hab1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hab2 {
+    grid-area: hab2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hab3 {
+    grid-area: hab3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hab4 {
+    grid-area: hab4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hab5 {
+    grid-area: hab5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hab6 {
+    grid-area: hab6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+   margin-bottom: 3vh;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 10vh;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-family: 'Archivo Black';
+}
+
+p {
+    text-align: justify;
+}
+
+.paragrafo {
+    margin-bottom: 3vh;
+}
+
+.linhas {
+    margin-left: 2vh;
+}
 /* -------------------- */
 
 /* Instrutores */
