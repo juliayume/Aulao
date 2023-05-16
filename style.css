@@ -19,6 +19,11 @@ body {
     .center {
         display: flex;
         align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        color: #7559F1;
     }
 
 /* -------------------- */
@@ -26,21 +31,25 @@ body {
 /* Capa */
 
     .background-image {
-        background-image: url("../Aulao/assets/wallpaper.png");
         background-repeat: no-repeat;
         background-size: 100%;
         width: 100%;
-        height: 100vh;
+        height: 200vh;
     }
-
+    
     .informations{
         color: white;
-        width: 50%;
-        height: 100%;
+        height: 30%;
+        width: 40%;
         display: flex;
         flex-direction: column;
-        padding-left: 5%;
-        padding-top: 5%;
+        padding-left: 10%;
+        padding-top: -5%;
+        padding-bottom: 8%;
+    }
+
+    .sphere {
+        width: 60%;
     }
 
     .title {
@@ -58,15 +67,27 @@ body {
         margin-left: 18%;
     }
 
-    .arrow {
-        width: 200px;
-        margin-top: 30%;
+    .instructors_1 {
+        display: flex;
+        align-items: center;
+        margin-top: 35%;
     }
 
-    /* Instructors */
+    .know-instructors {
+        font-size: smaller;
+        margin-left: 1%; 
+        margin-top: 3%;
+    }
+
+    .first-description {
+        font-size: smaller;
+        margin-top: 8%;
+    }
+
+    /* Fotos dos instrutores */
     .circulo {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
         border: 4px solid black;
         background-position: center center;
@@ -76,72 +97,23 @@ body {
     }
 
     .circulo:hover {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         z-index: 1;
-    }
-
-    .instructors_1 {
-        display: flex;
-        align-items: center;
-        margin-top: 30%;
     }
 
     /* Buttons */
 
     .more {
-        margin-top: 23%;
+        margin-top: 30%;
         z-index: 9999;
         position: absolute;
         align-items: center;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         border: 0;
         border-radius: 100px;
         box-sizing: border-box;
-        color: #ffffff;
-        cursor: pointer;
-        font-family:'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        justify-content: center;
-        line-height: 20px;
-        max-width: 480px;
-        min-height: 40px;
-        min-width: 0px;
-        overflow: hidden;
-        padding: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-        touch-action: manipulation;
-        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-        user-select: none;
-        -webkit-user-select: none;
-        vertical-align: middle;
-    }
-
-    .more:hover,
-    .more:focus { 
-        background-color: #16437E;
-        color: #ffffff;
-    }
-
-    .more:active {
-    background: #09223b;
-    color: rgb(255, 255, 255, .7);
-    }
-
-    .subscribe {
-        margin-top: 23%;
-        margin-left: 15%;
-        z-index: 9999;
-        position: absolute;
-        align-items: center;
-        background-color: transparent;
-        border: 2px solid black;
-        border-radius: 100px;
-        box-sizing: border-box;
-        color: black;
+        color: #000000;
         cursor: pointer;
         font-family:'Montserrat', sans-serif;
         font-size: 16px;
@@ -163,15 +135,58 @@ body {
         vertical-align: middle;
     }
 
+    .more:hover,
+    .more:focus { 
+        background-color: #7559F1;
+        color: #ffffff;
+    }
+
+    .more:active {
+    background: #644cd1;
+    color: rgb(255, 255, 255, .7);
+    }
+
+    .subscribe {
+        margin-top: 30%;
+        margin-left: 14%;
+        z-index: 9999;
+        position: absolute;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 100px;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        justify-content: center;
+        line-height: 20px;
+        max-width: 480px;
+        min-height: 40px;
+        min-width: 0px;
+        overflow: hidden;
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        touch-action: manipulation;
+        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+    }
+
     .subscribe:hover,
     .subscribe:focus { 
-        border: 2px solid white;
-        color: white;
+        border: 1px solid #F158BD;
+        color: #F158BD;
         font-weight: 500;
     }
 
     .subscribe:active {
-    background: #09223b;
+    background: #F158BD;
     color: rgb(255, 255, 255, .7);
     }
 
@@ -180,7 +195,7 @@ body {
     .tooltip {
         position: relative;
         display: inline-block;
-        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+        border-bottom: 1px dotted black;
         top: 5px;
     }
 
@@ -198,10 +213,26 @@ body {
         position: absolute;
         z-index: 1;
         font-size: smaller;
+        font-weight: 600;
     }
 
     .tooltip:hover .tooltiptext {
         visibility: visible;
+    }
+
+    /* Perguntas ao usuário */
+
+    .unfocused-box {
+        width: 20%;
+        height: 10%;
+        text-align: justify;
+        padding: 2%;
+        background: rgba( 255, 255, 255, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 13.5px );
+        border-radius: 10px;
+        position: absolute;
     }
 
 /* -------------------- */
@@ -224,30 +255,79 @@ body {
         font-size: 300%;
         margin-left: 5%;
         margin-right: 5%;
+        line-height: 130%;
+        word-spacing: 120%;
     }
 
     swiper-container {
         width: 300%;
-        height: 60%;
+        height: 40%;
     }
 
     swiper-slide {
-        text-align: justify;
+        text-align: left;
+        border-radius: 5%;
         padding-left: 2%;
         padding-right: 2%;
         font-size: 18px;
-        background: #fff;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #0f0c0c;
+        color: #ffffff;
     }
 
     swiper-slide img {
         display: block;
         width: 100%;
-        height: 100%;
         object-fit: cover;
+        margin-bottom: 5%;
     }
 
+    .blue-box {
+        background-color: #7559F1;
+    }
+
+    .yellow-box {
+        background-color: #d7da4a; 
+    }
+
+    .pink-box {
+        background-color: #F158BD;
+    }
+
+    .orange-box {
+        background-color: #e7631b;
+    }
+
+    .content-text {
+        font-size: 12px;
+    }
+
+/* -------------------- */
+
+/* Inscreva-se */
+    .subscribe-area {
+        height: 100vh;
+    }
+
+    .subscribe-box {
+        width: 60%;
+        height: 50%;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        background: rgba( 255, 255, 255, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 13.5px );
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 /* -------------------- */
