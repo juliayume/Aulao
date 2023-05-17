@@ -10,21 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Startup: Inicie sua jornada empreendedora</title>
 </head>
 <body>
     <!-- Menu -->
     <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><span></span></label>
     <label for="active" class="close"></label>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">Sobre</a>
-        <a href="#instructors">Instrutores</a>
-        <a href="#content">Conteúdos</a>
-        <a href="#subscribe">Inscrição</a>
-        <div class="dot"></div>
-    </nav>
+    <div class="wrapper">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#instructors">Instrutores</a></li>
+        <li><a href="#content">Conteúdos</a></li>
+        <li><a href="#subscribe">Inscrição</a></li>
+    </ul>
+    </div>
 
     <!-- Capa -->
     <div class="home" id="home">
@@ -40,13 +41,13 @@
                 <span class="circulo tooltip" style="background-image: url(assets/Barbara.png); margin-left: -1.3%"><span class="tooltiptext">Bárbara Dapper</span></span>
                 <span class="circulo tooltip" style="background-image: url(assets/Joao.png); margin-left: -1.3%;"><span class="tooltiptext">João Fetzer</span></span>
                 <span class="circulo tooltip" style="background-image: url(assets/Julia.jpg); margin-left: -1.3%;"><span class="tooltiptext">Julia Yume</span></span>
-                <a class="know-instructors" href="">Conheça os instrutores</a> <!--  -> Poderia ficar melhor -->
+                <a class="know-instructors" href="#instructors">Conheça os instrutores</a> <!--  -> Poderia ficar melhor -->
             </div>
             <div class="first-description">
                 <p>Junte-se a nós e desenvolva a capacidade de ver oportunidades onde as demais pessoas não conseguem enxergar e desenvolva as habilidades necessárias se destacar no mercado competitivo. Esperamos vocês esse sábado para iniciar sua jornada no mundo do empreendedorismo!</p>
             </div>
-            <button class="more" role="button">Conheça o curso</button>
-            <button class="subscribe" role="button">Inscreva-se</button>
+            <a href="#about" class="more" role="button">Conheça o curso</a>
+            <a href="#subscribe" class="subscribe" role="button">Inscreva-se</a>
         </div>
         <div class="center">
             <img class="sphere" src="assets/Sphere.png">
@@ -62,7 +63,7 @@
 
     <!-- Habilidades -->
 
-    <div class="body_hab container">
+    <div class="body_hab container" id="about">
         <div class="texto">
             <h1 class="about-title">Sobre o Curso</h1>
             <p class="paragrafo">Este é um curso introdutório de curta duração sobre criação de startups, o qual procura fornecer uma capacitação sobre startups, metodologias de inovação e construção e elaboração de ideias inovadoras que irão reinventar e transformar seus mercados de atuação. Ele é composto por uma aula teórica interligada a uma atividade prática, possibilitando aos inscritos a chance de colocar o conhecimento técnico adquirido em ação. <br>
@@ -96,7 +97,41 @@
 
     <!-- Instrutores -->
 
-    <div style="height: 100vh;">
+    <div class="fundo">
+        <h1 class="titulo">SOBRE OS</h1>
+        <h1 class="tituloNos">INTEGRANTES_</h1>
+        <div class="DivisoriaParticipantes">
+            <div class="participantes arthur">
+                <p class="nomeParticipantes"> Arthur Lehnen </p>
+                <p class="textoParticipantes">3B | 17 anos</p>
+                <img class="ArthurFoto" src="assets/fotoArthut.png" alt="Foto do Arthur Lehnen">
+            </div>
+            <div class="participantes amanda">
+                <p class="nomeParticipantes"> Amanda Silveira </p>
+                <p class="textoParticipantes">3B | 17 anos</p>
+                <img class="AmandaFoto" src="assets/fotoAmanda.png" alt="Foto da Amanda Silveira">
+            </div>
+            <div class="participantes barbara">
+                <p class="nomeParticipantes"> Bárbara Dapper </p>
+                <p class="textoParticipantes">3B | 17 anos</p>
+                <img class="BarbaraFoto" src="assets/fotoBarbara.png" alt="Foto da Bárbara Dapper">
+            </div>
+            <div class="participantes julia">
+                <p class="nomeParticipantes"> Julia Yume </p>
+                <p class="textoParticipantes">3B | 17 anos</p>
+                <img class="JuliaFoto" src="assets/fotoJulia.png" alt="Foto da Julia Yume">
+            </div>
+            <div class="participantes joao">
+                <p class="nomeParticipantes"> João Fetzer </p>
+                <p class="textoParticipantes">3B | 18 anos</p>
+                <img class="JoaoFoto" src="assets/fotoJoao.png" alt="Foto do João Fetzer">
+            </div>
+            <div class="participates nada">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div style="height: 100vh;">
         <div id="instructors" class="instructors-box">
             <a href="#Julia"> 
                 Julia Yume <br>
@@ -117,12 +152,12 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Conteúdo trabalhado -->
 
     <div class="content" id="content">
-        <h1 class="contentTitle animation js-animate-on-screen">CONHEÇA O QUE SERÁ TRABALHADO NO CURSO</h1>
+        <img src="assets/ContentTitle.png" class="contentTitle animation js-animate-on-screen">
         <swiper-container class="mySwiper animation js-animate-on-screen" pagination="true" pagination-clickable="true" slides-per-view="4"
         space-between="30" centered-slides="true">
             <swiper-slide class="blue-box">
@@ -196,6 +231,15 @@
                 
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="Email" placeholder="email@gmail.com" required="">
+
+                <label for="turma">Sua turma</label>
+                <input type="text" id="turma" name="Turma" placeholder="2AM" required="">
+
+                <label for="disponibilidade">Você estará disponível no dia 20/05 das 10:45 as 12:00 para participar?</label>
+                <select in="disponibilidade" name="Disponibilidade" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
                 
                 <button class="send" type="submit">Enviar</button>
             </form>
