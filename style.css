@@ -485,7 +485,7 @@ body {
         color: #000000;
     }
 
-    .container {
+    .hability {
         display: grid;
         grid-template-columns: 60vw 40vw;
         grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh;
@@ -565,6 +565,239 @@ body {
 /* -------------------- */
 
 /* Instrutores */
+
+    .fundo {
+        background-color: black;
+        color: white;
+        font-family: 'Archivo Black';
+    }
+
+    .fundo>h1 {
+        font-family: 'Archivo Black', sans-serif;
+        margin-left: 16vw;
+        transform: translateY(3vw); /* Movendo o texto para baixo */
+        font-size: 50px;
+        line-height: 55%;
+        margin-top: 5vh;
+    }
+
+    .tituloNos{
+        font-family: 'Archivo Black', sans-serif;
+        margin-left: 16vw;
+        font-size: 80px;
+        color: #ffdb58;
+    }
+
+    /* img {
+        width: 30vw;
+        height: 56.5vw;
+    } */
+
+    .textoParticipantes {
+        font-size: 32px;
+        left: 250px;
+        top: 2vh;
+        color: rgb(255, 255, 255);
+        margin-top: 4vh;
+        align-items: center;
+        text-align: center;
+        font-family: 'Archivo Black', sans-serif;
+    }
+
+    /* CARDS  */
+
+    .DivisoriaParticipantes {
+        margin-top: 1.5%;
+        display: grid;
+        grid-gap: 150px;
+        grid-row-gap: 0;
+        grid-template-areas:
+            "arthur amanda"
+            "barbara julia"
+            "joao nada";
+        /* grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto auto; */
+        /* margin-bottom: 3%; */
+        padding: 10px; 
+        margin: 70px;
+        justify-content: center;
+    }
+
+    /* Coloca os cards pares para baixo */
+    .DivisoriaParticipantes div:nth-child(even) {
+        margin-top: 150px;
+    }
+
+    .participantes {
+        border: 0;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        width: 25vw;
+        height: 60vh;
+        margin-top: 40px;
+    }
+
+    .arthur {
+        grid-area: arthur;
+        height: 70vh;
+        background: url(assets/fundoAmanda.jpg);
+        /* align-items: center; */
+    }
+
+    .amanda {
+        grid-area: amanda;
+        height: 70vh;
+        background: url(assets/fundoAmanda.jpg);
+    }
+
+    .barbara {
+        grid-area: barbara;
+        height: 70vh;
+        background: url(assets/fundoAmanda.jpg);
+        align-items: center;
+    }
+
+    .julia {
+        grid-area: julia;
+        height: 70vh;
+        background: url(assets/fundoAmanda.jpg);
+        align-items: center;
+    }
+
+    .joao {
+        grid-area: joao;
+        background: url(assets/fundoAmanda.jpg);
+        height: 70vh;
+        align-items: center;
+    }
+
+    .ArthurFoto{
+        width: 29.5vw;
+        height: 56.5vh;
+    }
+
+    .AmandaFoto{
+        width: 20vw;
+        height: 54vh;
+        align-items: center;
+    }
+
+    .BarbaraFoto{
+        width: 26vw;
+        height: 49vh;
+        margin-top: 13%;
+    }
+
+    .JuliaFoto{
+        width: 26vw;
+        height: 50vh;
+        margin-top: 13%;
+    }
+
+    .JoaoFoto{
+        width: 15vw;
+        height: 54vh;  
+    }
+
+    /* .nada{
+        grid-area: nada;
+    } */
+
+    @media all and (max-width: 876px) {
+        .DivisoriaParticipantes {
+            margin-top: 1.5%;
+            display: grid;
+            grid-row-gap: 10vh;
+            grid-column-gap: 0;
+            grid-template-areas:
+                "arthur" 
+                "amanda"
+                "barbara" 
+                "julia"
+                "joao" 
+                "nada";
+            align-items: center;
+            /* grid-template-columns: 100vw; */
+            /* grid-template-rows:;  */
+            /* margin-bottom: 3%;
+            padding: 10px; 
+            margin: 70px; */
+            justify-content: center;
+        }
+
+        .participantes {
+            border: 0;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            width: 94vw;
+            height: 60vh;
+            margin-top: 40px;
+            margin-left: 3vw;
+            margin-right: 3vw;
+        }
+
+        .DivisoriaParticipantes div:nth-child(even) {
+            margin-top: 1.5%;
+        }
+        
+        .ArthurFoto{
+            width: 85vw;
+            height: 56.5vh;
+        }
+        
+        .AmandaFoto{
+            width: 70vw;
+            height: 54vh;
+            align-items: center;
+        }
+        
+        .BarbaraFoto{
+            width: 80vw;
+            height: 46vh;
+            margin-top: 13%;
+        }
+        
+        .JuliaFoto{
+            width: 80vw;
+            height: 46vh;
+            margin-top: 13%;
+        }
+        
+        .JoaoFoto{
+            width: 58vw;
+            height: 48vh;  
+        }
+
+        .textoParticipantes{
+            font-size: 32px;
+            left: 250px;
+            top: 2vh;
+            color: rgb(255, 255, 255);
+            margin-top: 4vh;
+            align-items: center;
+            text-align: center;
+            font-family: 'Archivo Black', sans-serif;
+        }
+
+        .fundo>h1 {
+            font-family: 'Archivo Black', sans-serif;
+            margin-left: 16vw;
+            transform: translateY(3vw); /* Movendo o texto para baixo */
+            font-size: 40px;
+            line-height: 20%;
+            margin-top: 5vh;
+        }
+        
+        .tituloNos{ 
+            font-family: 'Archivo Black', sans-serif;
+            margin-left: 16vw;
+            font-size: 40px;
+            color: #ffdb58;
+        }
+    }
     /* Modal */
     .instructors-box {
         background-color: rgb(136, 58, 58);
