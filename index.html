@@ -9,159 +9,242 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Startup: Inicie sua jornada empreendedora</title>
 </head>
 <body>
-        <!-- Capa -->
-        <div class="background-image">
-            <div class="informations">
-                <div class="inline">
-                    <h1 class="title"><b><b>STARTUP:</b></b></h1>
-                    <h3 class="subtitle">INICIE SUA JORNADA<br>EMPREENDEDORA</h3>
-                </div>
+    <!-- Menu -->
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#instructors">Instrutores</a></li>
+        <li><a href="#content">Conteúdos</a></li>
+        <li><a href="#subscribe">Inscrição</a></li>
+    </ul>
+    </div>
+
+    <!-- Capa -->
+    <div class="home" id="home">
+        <div class="informations">
+            <div class="inline titulo">
+                <h1 class="title"><b><b>STARTUP:</b></b></h1>
+                <h3 class="subtitle">INICIE SUA JORNADA<br>EMPREENDEDORA</h3>
+            </div>
+            
+            <div class="instructors_1">
+                <span class="circulo tooltip" style="background-image: url(assets/Amanda.png);"><span class="tooltiptext">Amanda silveira</span></span>
+                <span class="circulo tooltip" style="background-image: url(assets/Arthur.png); margin-left: -1.3%;"><span class="tooltiptext">Arthur Lehnen</span></span>
+                <span class="circulo tooltip" style="background-image: url(assets/Barbara.png); margin-left: -1.3%"><span class="tooltiptext">Bárbara Dapper</span></span>
+                <span class="circulo tooltip" style="background-image: url(assets/Joao.png); margin-left: -1.3%;"><span class="tooltiptext">João Fetzer</span></span>
+                <span class="circulo tooltip" style="background-image: url(assets/Julia.jpg); margin-left: -1.3%;"><span class="tooltiptext">Julia Yume</span></span>
+                <a class="know-instructors" href="#instructors">Conheça os instrutores</a> <!--  -> Poderia ficar melhor -->
+            </div>
+            <div class="first-description">
+                <p>Junte-se a nós e desenvolva a capacidade de ver oportunidades onde as demais pessoas não conseguem enxergar e desenvolva as habilidades necessárias se destacar no mercado competitivo. Esperamos vocês esse sábado para iniciar sua jornada no mundo do empreendedorismo!</p>
+            </div>
+            <a href="#about" class="more" role="button">Conheça o curso</a>
+            <a href="#subscribe" class="subscribe" role="button">Inscreva-se</a>
+        </div>
+        <div class="center">
+            <img class="sphere" src="assets/Sphere.png">
+            <div class="unfocused-box animation js-animate-on-screen" style="margin-right: 50%; margin-bottom: 20%;">
+                <p>Você tem vontade de se inserir no mercado empreendedor mas não sabe por onde começar?</p>
+            </div>
+            <div class="unfocused-box animation js-animate-on-screen" style="margin-left: 50%; margin-top: 20%;">
+                <p>Já ouviu falar nas famosas startups e como esse novo modelo de negócio está movimentando milhões de dólares, mas não tem ideia de como criar uma?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Habilidades -->
+
+    <div class="body_hab container" id="about">
+        <div class="texto">
+            <h1 class="about-title">Sobre o Curso</h1>
+            <p class="paragrafo">Este é um curso introdutório de curta duração sobre criação de startups, o qual procura fornecer uma capacitação sobre startups, metodologias de inovação e construção e elaboração de ideias inovadoras que irão reinventar e transformar seus mercados de atuação. Ele é composto por uma aula teórica interligada a uma atividade prática, possibilitando aos inscritos a chance de colocar o conhecimento técnico adquirido em ação. <br>
+            Ao final do curso, todos receberão um certificado de conclusão que comprova a familiarização dos inscritos com os principais conceitos e metodologias de criação de startups. Em adição, haverá uma premiação para a esquipe que desenvolver o melhor projeto para solucionar alguma questão social relacionada à um dos três problemas contemporâneos brasileiros propostos pela atividade: saúde, educação e desemprego</p>
+        </div>
+        <div class="hab1">
+            <img src="assets/adaptacao.png" class="hab-images">
+            <p class="linhas">Capacidade de adaptação</p>
+        </div>
+        <div class="hab2">
+            <img src="assets/comunicacao.png" class="hab-images" alt="Ícone">
+            <p class="linhas">Comunicação e trabalho em equipe</p>
+        </div>
+        <div class="hab3">
+            <img src="assets/criatividade.png" class="hab-images" alt="Ícone">
+            <p class="linhas">Criatividade e inovação</p>
+        </div>
+        <div class="hab4">
+            <img src="assets/oratoria.png" class="hab-images" alt="Ícone">
+            <p class="linhas">Oratória persuasiva</p>
+        </div>
+        <div class="hab5">
+            <img src="assets/organizacao.png" class="hab-images" alt="Ícone">
+            <p class="linhas">Planejamento e organização</p>
+        </div>
+        <div class="hab6">
+            <img src="assets/pensamento.png" class="hab-images" alt="Ícone">
+            <p class="linhas">Visão crítica e pensamento empreendedor</p>
+        </div>
+    </div>
+
+    <!-- Instrutores -->
+
+    <div id="instructors">
+        <img class="instructors-title" src="assets/InstructorsTitle.png">
+        <div class="DivisoriaParticipantes">
+            <div class="participantes arthur">
+                <p class="nomeParticipantes"> Arthur Lehnen </p>
+                <p class="textoParticipantes">3B | 17 anos</p>
+                <img class="ArthurFoto" src="assets/fotoArthut.png" alt="Foto do Arthur Lehnen">
+            </div>
+            <div class="participantes amanda">
+                <p class="nomeParticipantes"> Amanda Silveira </p>
+                <p class="textoParticipantes">3B | 17 anos</p>
+                <img class="AmandaFoto" src="assets/fotoAmanda.png" alt="Foto da Amanda Silveira">
+            </div>
+            <div class="participantes barbara">
+                <p class="nomeParticipantes"> Bárbara Dapper </p>
+                <p class="textoParticipantes">3B | 17 anos</p>
+                <img class="BarbaraFoto" src="assets/fotoBarbara.png" alt="Foto da Bárbara Dapper">
+            </div>
+            <div class="participantes julia">
+                <p class="nomeParticipantes"> Julia Yume </p>
+                <p class="textoParticipantes">3B | 17 anos</p>
+                <img class="JuliaFoto" src="assets/fotoJulia.png" alt="Foto da Julia Yume">
+            </div>
+            <div class="participantes joao">
+                <p class="nomeParticipantes"> João Fetzer </p>
+                <p class="textoParticipantes">3B | 18 anos</p>
+                <img class="JoaoFoto" src="assets/fotoJoao.png" alt="Foto do João Fetzer">
+            </div>
+            <div class="participates nada">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div style="height: 100vh;">
+        <div id="instructors" class="instructors-box">
+            <a href="#Julia"> 
+                Julia Yume <br>
+                17 anos | 3B
+            </a>
+        </div>
+        <div id="Julia" class="modal">
+            <div class="model-content">
+                <h1 style="color: green;">
+                    Hello GeeksForGeeks !
+                </h1>
+                <b>
+                    <p>Never Give Up !</p>
+                </b>
+                <a href="#instructors" 
+                   class="box-close">
+                    ×
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Conteúdo trabalhado -->
+
+    <div class="content" id="content">
+        <img src="assets/ContentTitle.png" class="contentTitle">
+        <swiper-container class="mySwiper animation js-animate-on-screen" pagination="true" pagination-clickable="true" slides-per-view="4"
+        space-between="30" centered-slides="true">
+            <swiper-slide class="blue-box">
+                <img src="assets/ComportamentoEmpreendedor.png">
                 
-                <div class="instructors_1">
-                    <span class="circulo tooltip" style="background-image: url(../Aulao/assets/Amanda.png);"><span class="tooltiptext">Amanda silveira</span></span>
-                    <span class="circulo tooltip" style="background-image: url(../Aulao/assets/Arthur.png); margin-left: -1.3%;"><span class="tooltiptext">Arthur Lehnen</span></span>
-                    <span class="circulo tooltip" style="background-image: url(../Aulao/assets/Barbara.png); margin-left: -1.3%"><span class="tooltiptext">Bárbara Dapper</span></span>
-                    <span class="circulo tooltip" style="background-image: url(../Aulao/assets/Joao.png); margin-left: -1.3%;"><span class="tooltiptext">João Fetzer</span></span>
-                    <span class="circulo tooltip" style="background-image: url(../Aulao/assets/Julia.jpg); margin-left: -1.3%;"><span class="tooltiptext">Julia Yume</span></span>
+                <p class="content-text">Para o negócio dar certo, é preciso que essa ideia inovadora para por um processo de validação, o qual tem o objetivo de analisar se a ideia é viável e faz com que o empreendedor obtenha insights importantes, que permitem o aprimoramento do produto ou serviço.</p>
+            </swiper-slide>
+            <swiper-slide class="yellow-box">
+                <img src="assets/Startup.png">
+                
+                <p class="content-text">Será explicado o conceito de "startup", assim como suas características básicas e o motivo desses empreendimentos estarem tão em alta no mercado atual.</p>
+            </swiper-slide>
+            <swiper-slide class="pink-box">
+                <img src="assets/Organograma.png">
+                
+                <p class="content-text">O organograma é um elemento essencial durante a criação de uma startup, é a partir dele que é definida a maneira que a startup se organiza internamente, ou seja, cargos, departamento e a hierarquia, por isso, os inscritos serão ensinados a organizar um.</p>
+            </swiper-slide>
+            <swiper-slide class="orange-box">
+                <img src="assets/PerguntaProblema.png">
+                
+                <p class="content-text">A pergunta problema serve como um norte, é a partir dela que o produto da startup é pensado e produzido. No curso, os inscritos terão um momento de aprendizagem sobre como estruturar e validar a qualidade dessa pergunta.</p>
+            </swiper-slide>
+            <swiper-slide class="blue-box">
+                <img src="assets/Persona.png">
+                
+                <p class="content-text">Todo negócio tem seu público-alvo, e uma startup não é diferente. Então, haverá um momento dedicado ao processo de escolha e criação da persona, que consiste na representação fictícia do cliente ideal e suas caracterizações.</p>
+            </swiper-slide>
+            <swiper-slide class="pink-box">
+                <img src="assets/ValidacaoIdeia.png">
+                
+                <p class="content-text">Para o negócio dar certo, é preciso que essa ideia inovadora para por um processo de validação, o qual tem o objetivo de analisar se a ideia é viável e faz com que o empreendedor obtenha insights importantes, que permitem o aprimoramento do produto ou serviço.</p>
+            </swiper-slide>
+            <swiper-slide class="yellow-box">
+                <img src="assets/Escalonamento.png">
+                
+                <p class="content-text">O potencial de escalonamento de uma startup é algo essencial para que ela tenha sucesso no mercado, portanto, os inscritos receberão dicas e entenderão melhor o que é necessário para seu negócio seja capaz de crescer rapidamente e tenha um potencial de expansão ilimitado.</p>
+            </swiper-slide>
+            <swiper-slide class="pink-box">
+                <img src="assets/ModeloNegocio.png">
+                
+                <p class="content-text">O modelo de negócio define a forma como a empresa gera e entrega valor para seus clientes, ou seja, é a estruturação dos elementos e etapas que compõe a forma com que uma empresa faz o que faz. Portanto, ter uma definição clara do melhor modelo de negócio para sua startup é algo indispensável.</p>
+            </swiper-slide>
+            <swiper-slide class="orange-box">
+                <img src="assets/MVP.png">
+                
+                <p class="content-text">O MVP testa a adesão e a receptividade do público-alvo daquele produto e permite que, com base no feedback coletado, sejam feitos ajustes na versão ideal do produto que será comercializada. Com isso, os inscritos entenderão melhor sua importância e aplicação durante o curso.</p>
+            </swiper-slide>
+            <swiper-slide class="blue-box">
+                <img src="assets/Pitch.png">
+                
+                <p class="content-text">Durante a aula será explicado o conceito de pitch e a sua grande importância no processo de despertar a atenção de um investidor, parceiro ou cliente pelo negócio. Os inscritos terão a oportunidade de analisar mais detalhadamente o processo de criação de um pitch e até mesmo colocar sua aprendizagem em prática durante a atividade proposta no decorrer da oficina.</p>
+            </swiper-slide>
+            <swiper-slide class="yellow-box">
+                <img src="assets/ProblemaContemporâneo.png">
+                
+                <p class="content-text">Toda startup parte de um problema que, nas maioria das vezes, surge de situações problemáticas presentes no cotidiano do empreendedor. Tendo isso em mente, abordaremos alguns dos maiores problemas do Brasil atualmente, que servirão de guias para a execução da atividade prática.</p>
+            </swiper-slide>
+        </swiper-container>
+    </div>
 
-                    <a class="know-instructors" href="">Conheça os instrutores</a> <!--  -> Poderia ficar melhor -->
-                </div>
+    <!-- Inscreva-se -->
 
-                <div class="first-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida ac dui vel consectetur. Donec et ex tortor. Pellentesque blandit dolor turpis, at tristique ex tincidunt vitae. Aenean ac mi interdum sem tempor euismod a non odio. Fusce at mi ut arcu pulvinar fermentum sit amet vel turpis. Vivamus tincidunt euismod tempus. Nunc sed nisi nec enim elementum posuere. Sed sit amet risus tristique, convallis est non, pharetra nunc. Proin sed porttitor turpis, a varius lectus.</p>
-                </div>
+    <div class="subscribe-area center" id="subscribe">
+        <img src="assets/BlueSphere1.jpg" class="blue-sphere" style="margin-bottom: 15%; margin-right: 15%;">
+        <img src="assets/BlueSphere2.jpg" class="blue-sphere" style="margin-top: 20%; margin-left: 15%;">
+        <div class="subscribe-box">
+            <form action="https://formspree.io/f/mjvdzeaw" method="POST">
+                <h1 class="subscribe-title">Inscreva-se!</h1>
+                <label for="nomecompleto">Nome completo</label>
+                <input type="text" id="nomecompleto" name="Nome" placeholder="Nome Completo" required="">
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="Email" placeholder="email@gmail.com" required="">
 
-                <button class="more" role="button">Conheça o curso</button>
-                <button class="subscribe" role="button">Inscreva-se</button>
-            </div>
-            <div class="center">
-                <img class="sphere" src="../Aulao/assets/Sphere.png">
-                <div class="unfocused-box" style="margin-right: 50%; margin-bottom: 20%;">
-                    <p>Olaaa 1</p>
-                </div>
-                <div class="unfocused-box" style="margin-left: 50%; margin-top: 20%;">
-                    <p>Olaaa 2</p>
-                </div>
-            </div>
+                <label for="turma">Sua turma</label>
+                <input type="text" id="turma" name="Turma" placeholder="2AM" required="">
+
+                <label for="disponibilidade">Você estará disponível no dia 20/05 das 10:45 as 12:00 para participar?</label>
+                <select in="disponibilidade" name="Disponibilidade" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                
+                <button class="send" type="submit">Enviar</button>
+            </form>
         </div>
-
-        <!-- Habilidades -->
-        <div class="body_hab container">
-            <div class="texto">
-                <h1>Habilidades</h1>
-                <p class="paragrafo">Este é um curso introdutório de curta duração sobre criação de startups, o qual procura fornecer uma capacitação sobre startups, metodologias de inovação e construção e elaboração de ideias inovadoras que irão reinventar e transformar seus mercados de atuação. Ele é composto por uma aula teórica interligada a uma atividade prática, possibilitando aos inscritos a chance de colocar o conhecimento técnico adquirido em ação.</p>
-                <p>Ao final do curso, todos receberão um certificado de conclusão que comprova a familiarização dos inscritos com os principais conceitos e metodologias de criação de startups. Em adição, haverá uma premiação para a esquipe que desenvolver o melhor projeto para solucionar alguma questão social relacionada à um dos três problemas contemporâneos brasileiros propostos pela atividade: saúde, educação e desemprego</p>
-            </div>
-            <div class="hab1">
-                <img src="../img_hability/adaptacao.png" alt="">
-                <p class="linhas">Capacidade de adaptação</p>
-            </div>
-            <div class="hab2">
-                <img src="../img_hability/comunicacao.png" alt="Ícone">
-                <p class="linhas">Comunicação e trabalho em equipe</p>
-            </div>
-            <div class="hab3">
-                <img src="../img_hability/criatividade.png" alt="Ícone">
-                <p class="linhas">Criatividade e inovação</p>
-            </div>
-            <div class="hab4">
-                <img src="../img_hability/oratoria.png" alt="Ícone">
-                <p class="linhas">Oratória persuasiva</p>
-            </div>
-            <div class="hab5">
-                <img src="../img_hability/organizacao.png" alt="Ícone">
-                <p class="linhas">Planejamento e organização</p>
-            </div>
-            <div class="hab6">
-                <img src="../img_hability/pensamento.png" alt="Ícone">
-                <p class="linhas">Visão crítica e pensamento empreendedor</p>
-            </div>
-        </div>
-        
-        <div class="content">
-            <h1 class="contentTitle">CONHEÇA O QUE SERÁ TRABALHADO NO CURSO</h1>
-
-            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
-            space-between="30" centered-slides="true">
-                <swiper-slide class="blue-box">
-                    <img src="../Aulao/assets/ComportamentoEmpreendedor.png">
-                    
-                    <p class="content-text">Para o negócio dar certo, é preciso que essa ideia inovadora para por um processo de validação, o qual tem o objetivo de analisar se a ideia é viável e faz com que o empreendedor obtenha insights importantes, que permitem o aprimoramento do produto ou serviço.</p>
-                </swiper-slide>
-                <swiper-slide class="yellow-box">
-                    <img src="../Aulao/assets/Startup.png">
-                    
-                    <p class="content-text">Será explicado o conceito de "startup", assim como suas características básicas e o motivo desses empreendimentos estarem tão em alta no mercado atual.</p>
-                </swiper-slide>
-                <swiper-slide class="pink-box">
-                    <img src="../Aulao/assets/Organograma.png">
-                    
-                    <p class="content-text">O organograma é um elemento essencial durante a criação de uma startup, é a partir dele que é definida a maneira que a startup se organiza internamente, ou seja, cargos, departamento e a hierarquia, por isso, os inscritos serão ensinados a organizar um.</p>
-                </swiper-slide>
-                <swiper-slide class="orange-box">
-                    <img src="../Aulao/assets/PerguntaProblema.png">
-                    
-                    <p class="content-text">A pergunta problema serve como um norte, é a partir dela que o produto da startup é pensado e produzido. No curso, os inscritos terão um momento de aprendizagem sobre como estruturar e validar a qualidade dessa pergunta.</p>
-                </swiper-slide>
-                <swiper-slide class="blue-box">
-                    <img src="../Aulao/assets/Persona.png">
-                    
-                    <p class="content-text">Todo negócio tem seu público-alvo, e uma startup não é diferente. Então, haverá um momento dedicado ao processo de escolha e criação da persona, que consiste na representação fictícia do cliente ideal e suas caracterizações.</p>
-                </swiper-slide>
-                <swiper-slide class="pink-box">
-                    <img src="../Aulao/assets/ValidacaoIdeia.png">
-                    
-                    <p class="content-text">Para o negócio dar certo, é preciso que essa ideia inovadora para por um processo de validação, o qual tem o objetivo de analisar se a ideia é viável e faz com que o empreendedor obtenha insights importantes, que permitem o aprimoramento do produto ou serviço.</p>
-                </swiper-slide>
-                <swiper-slide class="yellow-box">
-                    <img src="../Aulao/assets/Escalonamento.png">
-                    
-                    <p class="content-text">O potencial de escalonamento de uma startup é algo essencial para que ela tenha sucesso no mercado, portanto, os inscritos receberão dicas e entenderão melhor o que é necessário para seu negócio seja capaz de crescer rapidamente e tenha um potencial de expansão ilimitado.</p>
-                </swiper-slide>
-                <swiper-slide class="pink-box">
-                    <img src="../Aulao/assets/ModeloNegocio.png">
-                    
-                    <p class="content-text">O modelo de negócio define a forma como a empresa gera e entrega valor para seus clientes, ou seja, é a estruturação dos elementos e etapas que compõe a forma com que uma empresa faz o que faz. Portanto, ter uma definição clara do melhor modelo de negócio para sua startup é algo indispensável.</p>
-                </swiper-slide>
-                <swiper-slide class="orange-box">
-                    <img src="../Aulao/assets/MVP.png">
-                    
-                    <p class="content-text">O MVP testa a adesão e a receptividade do público-alvo daquele produto e permite que, com base no feedback coletado, sejam feitos ajustes na versão ideal do produto que será comercializada. Com isso, os inscritos entenderão melhor sua importância e aplicação durante o curso.</p>
-                </swiper-slide>
-                <swiper-slide class="blue-box">
-                    <img src="../Aulao/assets/Pitch.png">
-                    
-                    <p class="content-text">Durante a aula será explicado o conceito de pitch e a sua grande importância no processo de despertar a atenção de um investidor, parceiro ou cliente pelo negócio. Os inscritos terão a oportunidade de analisar mais detalhadamente o processo de criação de um pitch e até mesmo colocar sua aprendizagem em prática durante a atividade proposta no decorrer da oficina.</p>
-                </swiper-slide>
-                <swiper-slide class="yellow-box">
-                    <img src="../Aulao/assets/ProblemaContemporâneo.png">
-                    
-                    <p class="content-text">Toda startup parte de um problema que, nas maioria das vezes, surge de situações problemáticas presentes no cotidiano do empreendedor. Tendo isso em mente, abordaremos alguns dos maiores problemas do Brasil atualmente, que servirão de guias para a execução da atividade prática.</p>
-                </swiper-slide>
-            </swiper-container>
-        </div>
-
-        <!-- Inscreva-se -->
-        <div class="subscribe-area center">
-            <div class="subscribe-box">
-                <form action="https://formspree.io/f/mjvdzeaw" method="POST">
-                    <label>
-                        Insira seu email:
-                        <input type="email" name="email">
-                    </label>
-                    <label>
-                        Insira seu nome:
-                        <textarea type="text" name="name"></textarea>
-                    </label>
-                    <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js"></script>
 </body>
 </html>
