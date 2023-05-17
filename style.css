@@ -17,7 +17,6 @@
 body {
     background-color: black;
     color: white;
-    height: 300%;
     font-family:'Montserrat', sans-serif;
 }
 
@@ -28,6 +27,100 @@ body {
         width: 80%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+}
+
+@media all and (max-width: 876px) {
+    .DivisoriaParticipantes {
+        margin-top: 1.5%;
+        display: grid;
+        grid-row-gap: 10vh;
+        grid-column-gap: 0;
+        grid-template-areas:
+            "arthur" 
+            "amanda"
+            "barbara" 
+            "julia"
+            "joao" 
+            "nada";
+        align-items: center;
+        /* grid-template-columns: 100vw; */
+        /* grid-template-rows:;  */
+        /* margin-bottom: 3%;
+        padding: 10px; 
+        margin: 70px; */
+        justify-content: center;
+    }
+
+    .participantes {
+        border: 0;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        width: 94vw;
+        height: 60vh;
+        margin-top: 40px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .DivisoriaParticipantes div:nth-child(even) {
+        margin-top: 1.5%;
+    }
+
+    .ArthurFoto{
+        width: 85vw;
+        height: 56.5vh;
+    }
+
+    .AmandaFoto{
+        width: 70vw;
+        height: 54vh;
+        align-items: center;
+    }
+
+    .BarbaraFoto{
+        width: 80vw;
+        height: 46vh;
+        margin-top: 13%;
+    }
+
+    .JuliaFoto{
+        width: 80vw;
+        height: 46vh;
+        margin-top: 13%;
+    }
+
+    .JoaoFoto{
+        width: 58vw;
+        height: 48vh;  
+    }
+
+    .textoParticipantes{
+        font-size: 32px;
+        left: 250px;
+        top: 2vh;
+        color: rgb(255, 255, 255);
+        margin-top: 4vh;
+        align-items: center;
+        text-align: center;
+        font-family: 'Archivo Black', sans-serif;
+    }
+
+    .fundo>h1 {
+        font-family: 'Archivo Black', sans-serif;
+        margin-left: 16vw;
+        transform: translateY(3vw); /* Movendo o texto para baixo */
+        font-size: 40px;
+        line-height: 20%;
+        margin-top: 5vh;
+    }
+
+    .tituloNos{ 
+        font-family: 'Archivo Black', sans-serif;
+        margin-left: 16vw;
+        font-size: 40px;
+        color: #ffdb58;
     }
 }
 
@@ -47,6 +140,55 @@ body {
 
     a {
         color: #7559F1;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .animation {
+        animation: fade-in 0.8s cubic-bezier(.17,.67,.49,1.02);
+        animation-play-state: paused;
+        animation-fill-mode: forwards;
+    }
+
+    /* Menu */
+    
+    .wrapper{
+        transition: all 0.6s ease-in-out;
+    }
+    #active:checked ~ .wrapper{
+    right:0;
+    }
+    .menu-btn{
+        position: absolute;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-btn span,
+    .menu-btn:before,
+    .menu-btn:after{
+        content: "";
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 30%;
+        width: 40%;
+        border-bottom: 2px solid #ffff;
+        transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .menu-btn:before{
+    transform: translateY(-8px);
+    }
+    .menu-btn:after{
+    transform: translateY(8px);
     }
 
     .animation {
@@ -194,11 +336,99 @@ body {
     }
     #active:checked + .menu-btn:before {
         transform: rotate(45deg);
-    border-color: #fff;
+        border-color: #fff;
+      border-color: #fff;
     }
     #active:checked + .menu-btn:after {
         transform: rotate(-45deg);
     border-color: #fff;
+    }
+
+    .wrapper ul{
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        display: inline-flex;
+        position: absolute;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        height: 10%;
+        width: 100%;
+        background: #000;
+        backdrop-filter: blur( 8px );
+    }
+    .wrapper ul li{
+    height: 10%;
+    margin: 15px 0;
+    }
+
+    .wrapper ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    line-height: 50px;
+    margin: 5px 30px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .wrapper ul li a:after{
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    transition: transform 0.3s ease;
+    }
+    .wrapper ul li a:hover:after{
+    transform: scaleY(1);
+    }
+    input[type="checkbox"]{
+    display: none;
+    }
+    .menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    color: #202020;
+    }
+    .menu .title{
+    font-size: 40px;
+    font-weight: 700;
+    }
+    .menu p{
+    font-size: 35px;
+    font-weight: 600;
+    }
+
+    #active:checked ~ .wrapper ul li a{
+    opacity: 1;
+    }
+    .wrapper ul li a{
+    transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateX(100px);
+    }
+    #active:checked ~ .wrapper ul li a{
+        transform: none;
+        transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
+    transition-delay: .6s;
+    transform: translateX(-100px);
     }
     nav ul{
         position: absolute;
@@ -485,6 +715,7 @@ body {
         color: #000000;
     }
 
+    .container {
     .hability {
         display: grid;
         grid-template-columns: 60vw 40vw;
@@ -569,6 +800,9 @@ body {
     .fundo {
         background-color: black;
         color: white;
+    }
+
+    .fundo h1 {
         font-family: 'Archivo Black';
     }
 
@@ -588,6 +822,22 @@ body {
         color: #ffdb58;
     }
 
+    .nomeParticipantes {
+        font-size: 30px;
+        font-weight: 600;
+        left: 250px;
+        top: 2vh;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        text-align: center;
+    }
+
+    .textoParticipantes {
+        font-size: 25px;
+        align-items: center;
+        text-align: center;
     /* img {
         width: 30vw;
         height: 56.5vw;
@@ -852,14 +1102,13 @@ body {
     }
 
     .contentTitle {
-        font-size: 300%;
         margin-left: 5%;
-        margin-right: 5%;
-        line-height: 130%;
-        word-spacing: 120%;
+        margin-right: 3%;
+        width: 30%;
     }
 
     swiper-container {
+        width: 5000px;
         width: 6000px;
         height: 300px;
     }
@@ -916,6 +1165,8 @@ body {
     }
 
     .subscribe-box {
+        width: 45%;
+        height: 75%;
         width: 40%;
         height: 50%;
         text-align: justify;
@@ -932,6 +1183,8 @@ body {
 
     .subscribe-title {
         font-size: x-large;
+        font-weight: 550;
+        margin-bottom: 5%;
         font-weight: 500;
         margin-bottom: 8%;
     }
@@ -940,6 +1193,19 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 90%;
+    }
+
+    label {
+        margin-bottom: 2%;
+    }
+
+    input, 
+    select {
+        border: 2px solid transparent;
+        border-radius: 100px;
+        height: 30%;
+        padding-left: 3%;
         width: 80%;
     }
 
@@ -959,10 +1225,26 @@ body {
         border: 2px solid #644cd1;
     }
 
+    option {
+        font-family:'Montserrat', sans-serif;
+    }
+
     .send {
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #644cd1;
+        margin-left: 83%;
+        border: 0;
+        border-radius: 100px;
+        box-sizing: border-box;
+        color: #ffff;
+        cursor: pointer;
+        font-family:'Montserrat', sans-serif;
+        font-size: medium;
+        font-weight: 550;
+        max-width: 90px;
+        min-height: 40px;
         background-color: rgb(255, 255, 255);
         border: 0;
         border-radius: 100px;
