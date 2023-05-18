@@ -1,8 +1,3 @@
-@font-face {
-    font-family: Horizon;
-    src: url("Fonts/Horizon/horizon.otf") format("otf");
-}
-
 @keyframes fade-in {
     0% { 
       opacity: 0;
@@ -523,12 +518,12 @@ body {
         font-size: 25px;
         align-items: center;
         text-align: center;
+        color: #ffffff;
     }
 
     /* CARDS  */
 
     .DivisoriaParticipantes {
-        margin-top: 1.5%;
         display: grid;
         grid-gap: 50px;
         grid-row-gap: 0;
@@ -536,14 +531,13 @@ body {
             "arthur amanda"
             "barbara julia"
             "joao nada";
-        padding: 10px; 
-        margin: 70px;
+        padding: 3em; 
         justify-content: center;
     }
 
     /* Coloca os cards pares para baixo */
-    .DivisoriaParticipantes div:nth-child(even) {
-        margin-top: 150px;
+    .DivisoriaParticipantes .par {
+        margin-top: 50%;
     }
 
     .participantes {
@@ -558,24 +552,34 @@ body {
         align-items: center;
     }
 
+    .participantes:hover {
+        width: 290px;
+        height: 360px;
+    }
+
     .arthur {
         grid-area: arthur;
+        position: relative;
     }
 
     .amanda {
         grid-area: amanda;
+        position: relative;
     }
 
     .barbara {
         grid-area: barbara;
+        position: relative;
     }
 
     .julia {
         grid-area: julia;
+        position: relative;
     }
 
     .joao {
         grid-area: joao;
+        position: relative;
     }
 
     .pictures{
@@ -585,36 +589,37 @@ body {
     }
 
     /* Modal */
-    .instructors-box {
-        background-color: rgb(136, 58, 58);
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .instructors-box a {
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 15px;
-        text-decoration: none;
-    }
-
     .modal {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        position: absolute;
+        width: 80em;
         transition: all 0.4s;
+        margin-top: 25%;
+        display: flex;
+        justify-content: center;
         visibility: hidden;
     }
-    .model-content {
-        height: 60%;
+    .modal-content {
+        height: fit-content;
         width: 40%;
         position: absolute;
         background: rgb(255, 255, 255);
         color: #0f0c0c;
         border-radius: 4px;
+        padding: 3%;
+        font-weight: 500;
+        text-align: justify;
     } 
+
+    .modal-content b {
+        color: #d7da4a;
+    }
+
+    .modal-content h1 {
+        font-size: large;
+        font-weight: 600;
+        padding-bottom: 1em;
+    }
+
     .modal:target {
         visibility: visible;
         opacity: 1;
@@ -623,7 +628,7 @@ body {
         position: absolute;
         top: 0;
         right: 15px;
-        color: #fe0606;
+        color: #000000;
         text-decoration: none;
         font-size: 30px;
     }
