@@ -603,8 +603,8 @@ body {
         height: fit-content;
         width: 40%;
         position: absolute;
-        background: rgb(255, 255, 255);
-        color: #0f0c0c;
+        background: #ffff;
+        color: #0000;
         border-radius: 4px;
         padding: 3%;
         font-weight: 500;
