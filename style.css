@@ -15,6 +15,9 @@
 }
 
 body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
     background-color: black;
     color: white;
     font-family:'Montserrat', sans-serif;
@@ -23,291 +26,7 @@ body {
 /* Responsividade */
 
 @media all and (min-width: 760px) {
-
-    /* Menu */
-    
-    .menu-btn{
-        position: fixed;
-        z-index: 2;
-        right: 3em;
-        top: 1em;
-        height: 50px;
-        width: 50px;
-        text-align: center;
-        line-height: 50px;
-        border-radius: 50%;
-        font-size: 20px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    /* Capa */
-
-    .background-image {
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 250vh;
-    }
-    
-    .informations{
-        color: white;
-        height: 30%;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 10%;
-        padding-bottom: 8%;
-    }
-
-    .sphere {
-        width: 60%;
-        margin-bottom: 10%;
-    }
-
-    .title {
-        font-size: xxx-large;
-        position: absolute;
-        z-index: 9999;
-        margin-top: 10%;
-    }
-
-    .subtitle {
-        font-size: large;
-        position: absolute;
-        z-index: 9999;
-        margin-top: 10.5%;
-        margin-left: 250px;
-    }
-
-    .instructors_1 {
-        display: flex;
-        align-items: center;
-        margin-top: 38%;
-    }
-
-    .know-instructors {
-        font-size: smaller;
-        margin-left: 1%; 
-        margin-top: 3%;
-    }
-
-    .first-description {
-        font-size: smaller;
-        margin-top: 8%;
-    }
-
-    /* Fotos dos instrutores */
-    .circulo {
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        border: 4px solid black;
-        background-position: center center;
-        background-size: contain;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .circulo:hover {
-        width: 45px;
-        height: 45px;
-        z-index: 1;
-    }
-
-    /* Buttons */
-
-    .more {
-        margin-top: 30%;
-        z-index: 9999;
-        position: absolute;
-        align-items: center;
-        background-color: rgb(255, 255, 255);
-        border: 0;
-        border-radius: 100px;
-        box-sizing: border-box;
-        color: #000000;
-        cursor: pointer;
-        font-family:'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        justify-content: center;
-        line-height: 20px;
-        max-width: 480px;
-        min-height: 40px;
-        min-width: 0px;
-        overflow: hidden;
-        padding: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-        touch-action: manipulation;
-        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-        user-select: none;
-        -webkit-user-select: none;
-        vertical-align: middle;
-    }
-
-    .more:hover,
-    .more:focus { 
-        background-color: #7559F1;
-        color: #ffffff;
-    }
-
-    .more:active {
-    background: #644cd1;
-    color: rgb(255, 255, 255, .7);
-    }
-
-    .subscribe {
-        margin-top: 30%;
-        margin-left: 200px;
-        z-index: 9999;
-        position: absolute;
-        align-items: center;
-        background-color: transparent;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 100px;
-        box-sizing: border-box;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-        font-family:'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        justify-content: center;
-        line-height: 20px;
-        max-width: 480px;
-        min-height: 40px;
-        min-width: 0px;
-        overflow: hidden;
-        padding: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-        touch-action: manipulation;
-        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-        user-select: none;
-        -webkit-user-select: none;
-        vertical-align: middle;
-    }
-
-    .subscribe:hover,
-    .subscribe:focus { 
-        border: 1px solid #F158BD;
-        color: #F158BD;
-        font-weight: 500;
-    }
-
-    .subscribe:active {
-    background: #F158BD;
-    color: rgb(255, 255, 255, .7);
-    }
 }
-
-@media all and (max-width: 759px) {
-
-    
-}
-
-
-/*{
-     .informations {
-        width: 80%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .DivisoriaParticipantes {
-        margin-top: 1.5%;
-        display: grid;
-        grid-row-gap: 10vh;
-        grid-column-gap: 0;
-        grid-template-areas:
-            "arthur" 
-            "amanda"
-            "barbara" 
-            "julia"
-            "joao" 
-            "nada";
-        align-items: center;
-        /* grid-template-columns: 100vw; */
-        /* grid-template-rows:;  */
-        /* margin-bottom: 3%;
-        padding: 10px; 
-        margin: 70px; */
-        /* justify-content: center;
-    }
-
-    .participantes {
-        border: 0;
-        border-radius: 5%;
-        display: flex;
-        flex-direction: column;
-        width: 94vw;
-        height: 60vh;
-        margin-top: 40px;
-        margin-left: 3vw;
-        margin-right: 3vw;
-    }
-
-    .DivisoriaParticipantes div:nth-child(even) {
-        margin-top: 1.5%;
-    }
-
-    .ArthurFoto{
-        width: 85vw;
-        height: 56.5vh;
-    }
-
-    .AmandaFoto{
-        width: 70vw;
-        height: 54vh;
-        align-items: center;
-    }
-
-    .BarbaraFoto{
-        width: 80vw;
-        height: 46vh;
-        margin-top: 13%;
-    }
-
-    .JuliaFoto{
-        width: 80vw;
-        height: 46vh;
-        margin-top: 13%;
-    }
-
-    .JoaoFoto{
-        width: 58vw;
-        height: 48vh;  
-    }
-
-    .textoParticipantes{
-        font-size: 32px;
-        left: 250px;
-        top: 2vh;
-        color: rgb(255, 255, 255);
-        margin-top: 4vh;
-        align-items: center;
-        text-align: center;
-        font-family: 'Archivo Black', sans-serif;
-    }
-
-    .fundo>h1 {
-        font-family: 'Archivo Black', sans-serif;
-        margin-left: 16vw;
-        transform: translateY(3vw); /* Movendo o texto para baixo */
-        /* font-size: 40px;
-        line-height: 20%;
-        margin-top: 5vh;
-    }
-
-    .tituloNos{ 
-        font-family: 'Archivo Black', sans-serif;
-        margin-left: 16vw;
-        font-size: 40px;
-        color: #ffdb58;
-    }
-} */
 
 /* -------------------- */
 
@@ -476,7 +195,7 @@ body {
 
     .background-image {
         width: 100%;
-        height: 250vh;
+        height: 200vh;
     }
     
     .informations{
@@ -485,7 +204,7 @@ body {
         width: 40%;
         display: flex;
         flex-direction: column;
-        padding: 0 10em;
+        padding: 10em 10em;
         padding-bottom: 10em;
     }
 
@@ -496,6 +215,7 @@ body {
 
     .titulo {
         display: inline;
+        align-items: center;
     }
 
     .title {
@@ -509,12 +229,13 @@ body {
         position: absolute;
         z-index: 9999;
         margin-left: 250px;
+        margin-top: 9px;
     }
 
     .instructors_1 {
         display: flex;
         align-items: center;
-        margin-top: 38%;
+        margin-top: 3em;
     }
 
     .know-instructors {
@@ -548,8 +269,9 @@ body {
 
     /* Buttons */
 
-    .more, .subscribe {
-        margin-top: 25em;
+    .buttons {
+        display: inline;
+        margin-top: 3em;
     }
 
     .more {
@@ -577,8 +299,6 @@ body {
         text-align: center;
         touch-action: manipulation;
         transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-        user-select: none;
-        -webkit-user-select: none;
         vertical-align: middle;
     }
 
@@ -687,18 +407,16 @@ body {
 /* Sobre o curso */
 
     .body_hab {
-        background-color: rgb(244, 255, 123);
-        padding-top: 13em;
-        padding-left: 5em;
-        padding-bottom: 5em;
+        padding: 5%;
+        display: flex;
         color: #000000;
-        height: 60vh;
-    }
-
-    .container {
+        background-color: rgb(244, 255, 123);
         display: grid;
-        grid-template-columns: 60vw 40vw;
-        grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10%;
         grid-template-areas:"texto hab1"
                             "texto hab2"
                             "texto hab3"
@@ -711,12 +429,12 @@ body {
         grid-area: texto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-left: 5vw;
+        width: 100%;
+        height: fit-content;
     }
 
     .about-title {
-        margin-bottom: 5vh;
+        margin-bottom: 5%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -725,10 +443,10 @@ body {
     }
 
     .paragrafo {
-        margin-bottom: 3vh;
         text-align: justify;
-        width: 75%;
+        width: 90%;
         line-height: 2em;
+        height: fit-content;
     }
 
     .hab-images {
@@ -741,36 +459,42 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 5%;
     }
     .hab2 {
         grid-area: hab2;
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 5%;
     }
     .hab3 {
         grid-area: hab3;
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 5%;
     }
     .hab4 {
         grid-area: hab4;
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 5%;
     }
     .hab5 {
         grid-area: hab5;
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 5%;
     }
     .hab6 {
         grid-area: hab6;
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 5%;
     }
 
     /* -------------------- */
@@ -780,7 +504,7 @@ body {
     .instructors-title {
         padding-top: 10%;
         padding-left: 10%;
-        width: 30%;
+        width: 400px;
     }
 
     .nomeParticipantes {
@@ -806,7 +530,7 @@ body {
     .DivisoriaParticipantes {
         margin-top: 1.5%;
         display: grid;
-        grid-gap: 150px;
+        grid-gap: 50px;
         grid-row-gap: 0;
         grid-template-areas:
             "arthur amanda"
@@ -827,10 +551,10 @@ body {
         border-radius: 5%;
         display: flex;
         flex-direction: column;
-        width: 23vw;
-        height: 20em;
+        width: 280px;
+        height: 350px;
         margin-top: 40px;
-        background: url(assets/fundoAmanda.jpg);
+        background: url(assets/instructorsBackground.jpg);
         align-items: center;
     }
 
@@ -857,7 +581,7 @@ body {
     .pictures{
         height: 60%;
         width: fit-content;
-        margin-top: 2em;
+        margin-top: 47px;
     }
 
     /* Modal */
@@ -872,7 +596,7 @@ body {
     .instructors-box a {
         background-color: #fff;
         padding: 15px;
-        border-radius: 3px;
+        border-radius: 15px;
         text-decoration: none;
     }
 
@@ -916,7 +640,7 @@ body {
     .contentTitle {
         margin-left: 5%;
         margin-right: 3%;
-        width: 30%;
+        width: 350px;
     }
 
     swiper-container {
@@ -969,18 +693,22 @@ body {
     /* Inscreva-se */
     .subscribe-area {
         height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .blue-sphere1 {
-        width: 400px;
+        width: 40%;
         margin-bottom: 15%; 
-        margin-right: 15%;
+        margin-right: 5%;
     }
 
     .blue-sphere2 {
-        width: 400px;
+        width: 40%;
         margin-top: 20%; 
-        margin-left: 15%;
+        margin-left: 5%;
     }
 
     .subscribe-box {
@@ -1019,7 +747,7 @@ body {
     select {
         border: 2px solid transparent;
         border-radius: 100px;
-        height: 30%;
+        height: 60px;
         padding-left: 3%;
         margin-bottom: 5%;
     }
@@ -1063,6 +791,6 @@ body {
     }
 
     .send:active {
-    background: #644cd1;
-    color: rgb(255, 255, 255, .7);
+        background: #644cd1;
+        color: rgb(255, 255, 255, .7);
     }
