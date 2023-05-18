@@ -536,7 +536,7 @@ body {
     }
 
     /* Coloca os cards pares para baixo */
-    .DivisoriaParticipantes .par {
+    .par {
         margin-top: 50%;
     }
 
@@ -555,6 +555,7 @@ body {
     .participantes:hover {
         width: 290px;
         height: 360px;
+        z-index: 1;
     }
 
     .arthur {
